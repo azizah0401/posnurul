@@ -1,0 +1,91 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfe8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: #b3d9ff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007BFF;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 1px;
+    margin-top: 5px;
+    border: 1px solid #cce0f5;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.login-btn {
+    width: 100%;
+    background: #3399ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background: #1a8cff;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 15px;
+    }
+}
